@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- Name: Kai Ho Chan
+Filename: itunes.html
+Description: In this app, I create an iTunes artist search program using
+the iTunes search API.
+
+While working on this assignment, Safari pops out an error, "Origin
+http://localhost is not allowed by Access-Control-Allow-Origin."
+
+Thus, I edit my code and use ajax to get the JSON file from itunes API.
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kai Ho Chan's iTunes</title>
+    <link rel="stylesheet" href="css/itunes.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+</head>
+
+<body>
+    <section id="itunes">
+        <h1><img src="itunes.jpg" alt="">iTunes Artist Search</h1>
+        <form id="itunes-search-form">
+        <input id="itunes-search-field" type="text" name="search" value="">
+        <input id="submit-button" type="submit" name="search" value="Search iTunes">
+        </form>
+    </section>
+    <div>
+        <br>
+    </div>
+    <div class="preview">
+    </div>
+    <script src="js/external.js"></script>
+</body>
+</html>

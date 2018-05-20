@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Create three unequal columns that floats next to each other */
+.row {
+    border-style: groove;
+}
+
+.column {
+    float: left;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+p {
+    margin-top: -10px;
+}
+
+.left, .right {
+  width: 25%;
+}
+
+.middle {
+  width: 50%;
+}
+
+a.with-space{
+    padding-left: 15px
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    padding-top: 100px;
+    left: 25%;
+    top: 50%;
+    width: 640px;
+    height: 320px;
+    overflow: auto;
+    background-color: rbg(0, 0, 0);
+    background-color:  rbga(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
