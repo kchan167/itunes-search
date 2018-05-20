@@ -18,7 +18,7 @@ let limitSearch = 'limit=20';
 // getString() function
 // Get user input and parse into a http link
 function getString(searchTerm) {
-    var url = 'http://itunes.apple.com/search?' + searchTerm + '&' + countrySearch
+    var url = 'https://itunes.apple.com/search?' + searchTerm + '&' + countrySearch
                 +'&' + mediaSearch +'&' + entitySearch + '&' + limitSearch;
     return url;
 }
